@@ -64,8 +64,6 @@ async fn tarefa_tres(receiver: Receiver<'static, ThreadModeRawMutex, u8, 64>, mu
         } else {
             saida.set_low(); 
         }
-
-        // Atraso de 1300ms
         Timer::after(Duration::from_millis(1300)).await;
     }
 }
@@ -74,14 +72,14 @@ async fn tarefa_tres(receiver: Receiver<'static, ThreadModeRawMutex, u8, 64>, mu
 #[embassy_executor::main]
 async fn main(spawner: Spawner) {
     
-    // Inicializa os periféricos do STM32
+    
     let p = embassy_stm32::init(Default::default());
 
     
     static FILA_1: Channel<ThreadModeRawMutex, u8, 64> = Channel::new();
     static FILA_2: Channel<ThreadModeRawMutex, u8, 64> = Channel::new();
 
-    // Inicializa as saídas nos pinos PA1, PA2 e PA3
+    
     let saida1 = Output::new(p.PA1, Level::Low, Speed::Medium);
     let saida2 = Output::new(p.PA2, Level::Low, Speed::Medium);
     let saida3 = Output::new(p.PA3, Level::Low, Speed::Medium);
