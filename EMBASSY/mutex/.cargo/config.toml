@@ -1,0 +1,17 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+runner = "probe-rs run --chip STM32G070RBT6"
+linker = "arm-none-eabi-ld"
+rustflags = [
+    "-C", "link-arg=-Tlink.x",
+]
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+debug = 2
+opt-level = "z" # Otimização de tamanho
+lto = true      # Link Time Optimization

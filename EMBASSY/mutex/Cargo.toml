@@ -1,0 +1,23 @@
+[package]
+name = "mutex"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+embassy-stm32 = { version = "0.1.0", features = ["stm32g070rb", "unstable-pac", "memory-x", "time-driver-any"] }
+embassy-sync = { version = "0.6.0"}
+embassy-executor = { version = "0.6.0", features = ["arch-cortex-m", "executor-thread", "integrated-timers", "executor-interrupt"] }
+embassy-time = { version = "0.3.2", features = [ "tick-hz-32_768"] }
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+cortex-m-rt = "0.7.3"
+embedded-hal = "1.0.0"
+heapless = { version = "0.8.0", default-features = false }
+nb = "1.1.0"
+panic-halt = "0.2.0"
+
+portable-atomic = { version = "1.9.0", features = ["critical-section"] }
+static_cell = "2.1.0"
+
+
+
