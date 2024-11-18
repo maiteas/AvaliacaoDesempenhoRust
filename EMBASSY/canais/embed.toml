@@ -1,0 +1,12 @@
+[default.probe]
+protocol = "Swd"
+
+[default.general]
+chip = "STM32G070RBTx"    
+
+[default.rtt]
+enabled = false
+
+
+[default.gdb]
+enabled = false
