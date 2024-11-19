@@ -1,0 +1,7 @@
+../Core/Src/main.c:73:6:GPIO_Config	1
+../Core/Src/main.c:106:5:main	1
+../Core/Src/main.c:235:6:Tarefa_um	2
+../Core/Src/main.c:260:6:Tarefa_dois	2
+../Core/Src/main.c:288:6:Tarefa_tres	2
+../Core/Src/main.c:317:6:Tarefa_quatro	2
+../Core/Src/main.c:343:6:Error_Handler	1

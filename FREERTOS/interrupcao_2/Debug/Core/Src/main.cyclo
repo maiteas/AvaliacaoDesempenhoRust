@@ -1,0 +1,8 @@
+../Drivers/CMSIS/Include/core_cm0plus.h:741:22:__NVIC_EnableIRQ	2
+../Drivers/CMSIS/Include/core_cm0plus.h:850:22:__NVIC_SetPriority	2
+../Core/Src/main.c:64:6:EXTI4_15_IRQHandler	2
+../Core/Src/main.c:81:6:GPIO_Config	1
+../Core/Src/main.c:127:5:main	1
+../Core/Src/main.c:218:6:Tarefa_um	1
+../Core/Src/main.c:238:6:Tarefa_saida	2
+../Core/Src/main.c:261:6:Error_Handler	1
