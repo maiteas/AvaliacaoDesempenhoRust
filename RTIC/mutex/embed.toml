@@ -1,0 +1,13 @@
+[default.probe]
+protocol = "Swd"
+
+[default.general]
+chip = "STM32G070RBTx"   
+
+[default.rtt]
+enabled = false
+# The duration in ms for which the logger should retry to attach to RTT.
+# timeout = 300
+
+[default.gdb]
+enabled = false

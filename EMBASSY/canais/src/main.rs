@@ -34,7 +34,9 @@ async fn tarefa_um(sender: Sender<'static, ThreadModeRawMutex, u8, 64>, mut said
 
 
 #[embassy_executor::task]
-async fn tarefa_dois(receiver: Receiver<'static, ThreadModeRawMutex, u8, 64>, sender: Sender<'static, ThreadModeRawMutex, u8, 64>, mut saida: Output<'static, PA2>) {
+async fn tarefa_dois(receiver: Receiver<'static, ThreadModeRawMutex, u8, 64>,
+                     sender: Sender<'static, ThreadModeRawMutex, u8, 64>, 
+                     mut saida: Output<'static, PA2>) {
     loop {
         
         let value = receiver.receive().await; 
@@ -64,6 +66,7 @@ async fn tarefa_tres(receiver: Receiver<'static, ThreadModeRawMutex, u8, 64>, mu
         } else {
             saida.set_low(); 
         }
+
         Timer::after(Duration::from_millis(1300)).await;
     }
 }

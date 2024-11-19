@@ -1,0 +1,19 @@
+[package]
+name = "canais"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+stm32g0xx-hal = { version = "0.2.0", features = ["rt", "stm32g070"] }
+portable-atomic = { version = "1.9.0", features = ["unsafe-assume-single-core"] }
+rtic-monotonics = { version = "2.0.3", features = ["cortex-m-systick", "stm32g070rb"]}
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+panic-halt = "0.2.0"
+nb = "1.1.0"
+panic-probe = { version = "0.3.2"}
+heapless = { version = "0.8.0", default-features = false }
+rtic-sync = "=1.3.1-alpha.1"
+rtic = { version = "2.1.1", features = ["thumbv6-backend"] }
+cortex-m-rt = "0.7.3"
+

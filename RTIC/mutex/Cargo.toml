@@ -1,0 +1,22 @@
+[package]
+name = "testeLed"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+stm32g0 = { version = "0.15.1", default-features = false, features = ["rt", "stm32g070"] }
+stm32g0xx-hal = { version = "0.2.0", features = ["rt", "stm32g070"] }
+embedded-hal = "1.0.0"
+cortex-m-rtic = "1.1.4"
+#rtic-monotonic ="1.0.0"
+systick-monotonic = "1.0.1"
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+cortex-m-rt = "0.7.3" #em vez de 3 tava 1
+panic-halt = "0.2.0"
+nb = "1.1.0"
+panic-probe = { version = "0.3.2"}
+heapless = { version = "0.8.0", default-features = false }
+
+
+
