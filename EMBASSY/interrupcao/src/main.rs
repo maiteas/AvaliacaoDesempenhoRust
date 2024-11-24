@@ -1,5 +1,5 @@
-//funcionou com interrupcao
-//adaptado de https://dev.to/theembeddedrustacean/embedded-rust-embassy-gpio-button-controlled-blinking-3ee6
+
+
 #![no_std]
 #![no_main]
 extern crate core;

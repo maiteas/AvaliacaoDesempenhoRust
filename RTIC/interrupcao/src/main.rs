@@ -35,7 +35,7 @@ mod app {
     #[init]  
     fn init(cx: init::Context) -> (Shared, Local, init::Monotonics) {  
         let dp: pac::Peripherals = cx.device;  
-        let mut rcc = dp.RCC.freeze(Config::hsi(Prescaler::Div2));  // hsi tem clock de 16Mhz https://github.com/stm32-rs/stm32g0xx-hal/blob/main/src/rcc/mod.rs
+        let mut rcc = dp.RCC.freeze(Config::hsi(Prescaler::Div2));  
 
         let gpioa = dp.GPIOA.split(&mut rcc);  
 

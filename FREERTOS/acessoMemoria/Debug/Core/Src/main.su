@@ -1,0 +1,5 @@
+../Core/Src/main.c:58:6:GPIO_Config	8	static
+../Core/Src/main.c:82:5:main	56	static
+../Core/Src/main.c:207:6:StartDefaultTask	16	static
+../Core/Src/main.c:225:6:MemoriaFunc	64	static
+../Core/Src/main.c:262:6:Error_Handler	8	static,ignoring_inline_asm

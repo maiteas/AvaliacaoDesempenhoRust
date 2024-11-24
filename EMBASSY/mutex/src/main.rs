@@ -9,8 +9,8 @@ use embassy_sync::blocking_mutex::raw::ThreadModeRawMutex;
 use embassy_sync::mutex::Mutex;
 use panic_halt as _;
 
-// baseado em: https://blog.theembeddedrustacean.com/embedded-rust-embassy-gpio-button-controlled-blinking
-// baseado em: https://blog.theembeddedrustacean.com/sharing-data-among-tasks-in-rust-embassy-synchronization-primitives
+
+
 
 static SAIDA1: Mutex<ThreadModeRawMutex, Option<Output<'static, PA1>>> = Mutex::new(None);
 static SAIDA2: Mutex<ThreadModeRawMutex, Option<Output<'static, PA2>>> = Mutex::new(None);
